@@ -1,0 +1,127 @@
+{%extends "mysite/base.html"%}
+{%load staticfiles%}
+{%block body_block%}
+
+<div id="profileSection"><div class="container" >
+    <div class="row">
+        <span id="badges">
+          <a href="https://www.freelancer.com/hireme/mycxle" target="_blank" >
+          <div class="skill-exam-badge exam-badge eb-us_eng_1"></div>
+          <div class="skill-exam-badge exam-badge eb-python-1"></div>
+          <div class="skill-exam-badge exam-badge eb-html_1"></div>
+          <div class="skill-exam-badge exam-badge eb-php_1"></div>
+          <div class="skill-exam-badge exam-badge eb-javascript_1"></div>
+        </a>
+        </span>
+
+        <span id="ratings">
+            <a href="https://www.freelancer.com/hireme/mycxle" target="_blank" ><img src="{%static 'images/ratings.png'%}" alt=""></a>
+        </span>
+
+        <div class="col-md-4 offset-md-4">
+            <img src="{%static 'images/pfp.jpg'%}" alt="">
+            <h1>Michael Webb.⚘</h1>
+            <p>Developer, Designer, Entrepreneur</p>
+            <p>Social Media &amp; Coding Guru</p>
+        </div>
+
+
+    </div>
+
+</div>
+</div>
+
+<div id="socialBanner" class="bg-primary">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <span class="socialSite"><i class="fab fa-twitter"></i><div class="followers">101,000+<br><span class="brk">Followers</span></div></span>
+                <span class="socialSite"><i class="fab fa-instagram"></i><div class="followers">73,500+<br><span class="brk">Followers</span></div></span>
+                <span class="socialSite"><i class="fab fa-facebook-f"></i><div class="followers">4,000+<br><span class="brk">Likes</span></div></span>
+                <span class="socialSite"><i class="fab fa-youtube"></i><div class="followers">1,000+<br><span class="brk">Subscribers</span></div></span>
+                <span class="socialSite"><i class="fab fa-discord"></i><div class="followers">6,500+<br><span class="brk">Members</span></div></span>
+                <span class="socialSite"><i class="fab fa-mastodon"></i><div class="followers">1,000+<br><span class="brk">Followers</span></div></span>
+                <!--<span class="socialSite"><i class="fab fa-medium"></i><div class="followers">50,000+<br><span class="brk">Followers</span></div></span>-->
+                <!--<span class="socialSite"><i class="fab fa-github"></i><div class="followers">50,000+<br><span class="brk">Followers</span></div></span>-->
+                <!--<span class="socialSite"><i class="fab fa-linkedin"></i><div class="followers">50,000+<br><span class="brk">Followers</span></div></span>-->
+                <span class="socialSite"><i class="fab fa-soundcloud"></i><div class="followers">1,000+<br><span class="brk">Followers</span></div></span>
+                <span class="socialSite"><i class="icoMoonFont"></i><div class="followers">7,800+<br><span class="brk">Followers</span></div></span>
+
+                <span class="socialSite"><i class="fab fa-snapchat"></i><div class="followers">Click to<br><span class="brk">View..</span></div></span>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bottomBanner"><div class="container"><ul><li><a href="#">videogamewarehou.se</a> | </li><li><a href="#">madapparel.co</a> | </li><li><a href="#">hobunk.com</a> | </li><li><a href="#">skrrtgang.com</a> | </li><li><a href="#">l0fi.com</a> | </li><li><a href="#">esuccessclub.com</a> | </li><li><a href="#">webbsit.es</a> | </li><li><a href="#">webbeneur.com</a></li></ul></div></div>
+
+<div id="recentProjects">
+    <div class="container">
+        <h1 class="recentProjectsHeader">Recent Projects</h1>
+        <div class="row">
+
+            <div class="col-sm-3">
+
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">☆ VGW</h3>
+                    </div>
+                    <div class="panel-body">
+                        <a href="#!">
+                            <div class="image" data-toggle="modal" data-target="#myModal">
+                                <img src="https://cdn3.f-cdn.com//files/download/69259931/24a61a.jpg" alt="">
+                            </div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">☆ l0fi.com</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="image">
+                            <img src="https://cdn3.f-cdn.com//files/download/70276954/fb8f1b.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-3">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">☆ webbeneur.com</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="image">
+                            <img src="https://cdn3.f-cdn.com//files/download/69260143/8f1c48.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-sm-3">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">☆ Code-Player</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="image">
+                            <img src="https://cdn3.f-cdn.com//files/download/69263833/ed0ba2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{%endblock%}

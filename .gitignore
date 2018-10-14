@@ -1,0 +1,5 @@
+.idea/
+_tmp/
+*.sqlite3
+*.iml
+mysite/secret.txt

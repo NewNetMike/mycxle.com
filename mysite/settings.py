@@ -41,7 +41,7 @@ except IOError:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["mycxle.com"]
+ALLOWED_HOSTS = ["mycxle.com", "www.mycxle.com'"]
 
 
 # Application definition

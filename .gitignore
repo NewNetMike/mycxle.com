@@ -3,3 +3,4 @@ _tmp/
 *.sqlite3
 *.iml
 mysite/secret.txt
+mysite/pyrebase_config.py

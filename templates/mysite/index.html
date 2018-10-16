@@ -59,69 +59,68 @@
 <div id="recentProjects">
     <div class="container">
         <h1 class="recentProjectsHeader">Recent Projects</h1>
+
+        {%for r in portfolio_items%}
+
         <div class="row">
 
-            <div class="col-sm-3">
+            {%for item in r%}
 
-
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">☆ VGW</h3>
-                    </div>
-                    <div class="panel-body">
-                        <a href="#!">
-                            <div class="image" data-toggle="modal" data-target="#myModal">
-                                <img src="https://cdn3.f-cdn.com//files/download/69259931/24a61a.jpg" alt="">
-                            </div></a>
-                    </div>
+            <div class="col-sm-4 portfolio-item">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">☆ {{item.title}}</h3>
+                </div>
+                <div class="panel-body">
+                    <a href="#!">
+                        <div class="image" data-toggle="modal" data-target="#myModal{{item.id}}">
+                            <img src="{{item.image}}" alt="{{item.title}}">
+                        </div></a>
                 </div>
             </div>
-            <div class="col-sm-3">
-
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">☆ l0fi.com</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="image">
-                            <img src="https://cdn3.f-cdn.com//files/download/70276954/fb8f1b.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-
             </div>
-            <div class="col-sm-3">
 
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">☆ webbeneur.com</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="image">
-                            <img src="https://cdn3.f-cdn.com//files/download/69260143/8f1c48.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
+            {%endfor%}
 
+        </div>
 
+        {%endfor%}
+
+    </div>
+</div>
+
+{%for r in portfolio_items%}
+{%for item in r%}
+
+<div id="myModal{{item.id}}" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">☆ {{item.title}}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
-            <div class="col-sm-3">
+            <div class="modal-body">
+                <p>{{item.description}}</p>
 
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">☆ Code-Player</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="image">
-                            <img src="https://cdn3.f-cdn.com//files/download/69263833/ed0ba2.jpg" alt="">
-                        </div>
-                    </div>
+                <div class=""><button type="button" class="btn btn-dark" onclick="var win = window.open('{{item.github_link}}', '_blank');
+  win.focus();">Go to GitHub &raquo;</button><button type="button" class="btn btn-success" onclick="var win = window.open('{{item.live_link}}', '_blank');
+  win.focus();">See it Live &raquo;</button></div>
+
+
+                <img src="{{item.image}}" class="img-responsive">
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="var win = window.open('https://www.freelancer.com/hireme/mycxle', '_blank');
+  win.focus();">Hire Me</button>
                 </div>
-
-
             </div>
         </div>
     </div>
 </div>
+
+{%endfor%}
+{%endfor%}
 
 {%endblock%}

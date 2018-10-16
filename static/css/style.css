@@ -157,6 +157,7 @@
 .panel-title{
 	border-bottom: 1px solid black;
 	margin-bottom: 10px;
+	font-size: 1.5em;
 }
 
 .panel-body{
@@ -255,6 +256,10 @@
 		transform: translateX(-50%);
 	}
 
+}
+
+.portfolio-item{
+    margin-top: auto;
 }
 
 
